@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jayesh Jibhade - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .resume-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 0 72px 0;
+    }
+    .pdf-viewer {
+      width: 80vw;
+      height: 90vh;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.16);
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .download-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1a73e8;
+      color: #fff;
+      padding: 14px 36px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(26,115,232,0.16);
+      transition: background 0.2s;
+      z-index: 10;
+    }
+    .download-btn:hover {
+      background: #1558b0;
+    }
+    @media (max-width: 600px) {
+      .pdf-viewer {
+        width: 98vw;
+        height: 75vh;
+      }
+      .download-btn {
+        width: 90vw;
+        padding: 14px 0;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <iframe
+      class="pdf-viewer"
+      src="JayeshBhade-Resume.pdf"
+      frameborder="0"
+      title="Jayesh Jibhade Resume"
+    ></iframe>
+  </div>
+  <a href="JayeshBhade-Resume.pdf" download>
+    <button class="download-btn">
+      Download Resume
+    </button>
+  </a>
+</body>
+</html>
